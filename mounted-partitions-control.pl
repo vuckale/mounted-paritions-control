@@ -19,11 +19,9 @@ for my $i (1 .. $#mount_points) {
 if (scalar(@media_drives)){
     print "<ID>: <MOUNTED MEDIA>\n\n";
     for my $i (0 .. $#media_drives) {
-    my $shifted_index = $i + 1;
-    printf "%s: $media_drives[$i]\n", $i+1;
-    # print "$i: $media_drives_filesystem[$i]\n";
+        printf "%s: $media_drives[$i]\n", $i+1;
     }
-    print "\nWhich drive do you want to unmount? Type <ID> and press ENTER key.\n";
+    print "\nWhich drive do you want to eject? Type <ID> and press ENTER key.\n";
     my $done = 0;
     while (!$done){
         my $id = <STDIN>;
