@@ -6,10 +6,19 @@ Perl script for unmouting/powering-off media/usb drives
 ## Dependencies
 [perl](https://www.perl.org/), [udisksctl](https://manpages.ubuntu.com/manpages/bionic/man1/udisksctl.1.html)
 
+Debian based distros:
+
 ```bash
 sudo apt-get install perl udisks
 ```
 
+Arch based distros:
+
+The perl package for Perl 5 is installed as part of the base group during Arch Linux installation. [https://wiki.archlinux.org/index.php/Perl#Installation](https://wiki.archlinux.org/index.php/Perl#Installation)
+
+```bash
+sudo pacman -S udisks
+```
 ## Usage:
 
 ```bash

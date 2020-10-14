@@ -2,11 +2,11 @@
 use strict;
 use warnings;
 use diagnostics;
+
 open(DF, "df|");
 my @mount_points = <DF>;
 my @media_drives = ();
 my @media_drives_filesystem = ();
-
 for my $i (1 .. $#mount_points) {
     my @mounted_point_splitted = split ' ', $mount_points[$i];
     my $mounted_point_path = $mounted_point_splitted[5];
